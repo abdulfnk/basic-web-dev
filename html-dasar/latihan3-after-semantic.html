@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Website Modern (Semantic Tag)</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- HEADER AREA -->
+      <h1>WPU Tech News</h1>
+      <nav aria-label="Navigasi Utama">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Berita</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- KONTEN UTAMA -->
+    <main>
+      <!-- Artikel Utama -->
+      <section class="hot-news">
+        <!-- Memberikan makna artikel utama bagi pengguna secara UX maupun screen reader -->
+        <h2>Berita Utama</h2>
+        <article>
+          <h3>Belajar Semantic HTML</h3>
+          <p>Semantic HTML adalah cara menulis kode yang...</p>
+        </article>
+        <article>
+          <h3>Kenapa Harus Move On dari Div?</h3>
+          <p>Karena div tidak memiliki makna semantik...</p>
+        </article>
+      </section>
+    </main>
+
+    <!-- Sidebar Kanan -->
+    <aside>
+      <!-- Memisahkan artikel tambahan dari iklan (temanya berbeda)-->
+      <section class="popular-news">
+        <h3>Berita Terpopuler</h3>
+        <ul>
+          <li><a href="#">Tutorial CSS Grid</a></li>
+          <li><a href="#">Tutorial Flexbox</a></li>
+        </ul>
+      </section>
+
+      <!--  -->
+      <div class="ads">
+        <p>[Iklan Baris di sini]</p>
+      </div>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 WPU Course. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
