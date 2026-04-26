@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba Elemen Form</title>
+  </head>
+  <body>
+    <h1>Contoh Elemen Form pada HTML</h1>
+    <!-- Meskipun membungkus <input> dengan <label> dan memasangkan for-id adalah langkah yang lebih lengkap dan best practice, tetapi harus dipahami konteks yang ada -->
+    <form>
+      <table>
+        <tr>
+          <td>
+            <!-- Salah: struktur label tidak valid karena melintasi <td> meskipun masih bisa berjalan di browser-->
+            <label for="nama">Nama
+          </td>
+          <td>:</td>
+          <td>
+            <input
+              id="nama"
+              type="text"
+              name="nama"
+              placeholder="Masukkan nama..."
+            />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Benar: label terhubung dengan input via for-id (best practice) -->
+            <label for="jenis-kelamin">Jenis Kelamin</label>
+          </td>
+          <td>:</td>
+          <td>
+            <input
+              id="jenis-kelamin"
+              type="text"
+              name="jenis-kelamin"
+              placeholder="Masukkan jenis kelamin..."
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="umur">Umur: </label>
+          </td>
+          <td>:</td>
+          <td>
+            <input
+              id="umur"
+              type="number"
+              name="umur"
+              placeholder="Masukkan umur..."
+              min="0"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="tanggal-lahir">Tanggal Lahir: </label>
+          </td>
+          <td>:</td>
+          <td>
+            <input
+              id="tanggal-lahir"
+              type="date"
+              name="tanggal-lahir"
+              placeholder="Masukkan tanggal lahir..."
+              style="width: 97%;"
+              
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email: </label>
+          </td>
+          <td>:</td>
+          <td>
+            <input type="email" id="email" placeholder="Masukkan email..." />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="password1">Password: </label>
+          </td>
+          <td>:</td>
+          <td>
+            <input
+              id="password1"
+              type="password"
+              name="password1"
+              placeholder="Masukkan password..."
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="password2">Password:</label></td>
+          <td>:</td>
+          <td>
+            <input
+              id="password2"
+              type="password"
+              name="password2"
+              placeholder="Masukkan password..."
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" align="right">
+            <button type="submit" id="kirim">Kirim</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
