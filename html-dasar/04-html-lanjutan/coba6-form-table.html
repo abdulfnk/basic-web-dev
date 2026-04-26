@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba Elemen Form</title>
+  </head>
+  <body>
+    <h1>Struktur Form yang Lebih Fresh</h1>
+    <p align="justify">
+      Menghapus kolom yang hanya berisi ":" untuk memastikan data berpindah
+      sesuai dengan indeks yang jelas dari bentuk form ke bentuk table. <br />
+      Semula ukuran tabel 3x8, sedangkan saat ini hanya 2x8.
+    </p>
+    <br />
+
+    <form>
+      <table>
+        <tr>
+          <td align="right">
+            <label for="nama">Nama:</label>
+          </td>
+          <td>
+            <input
+              id="nama"
+              type="text"
+              name="nama"
+              placeholder="Masukkan nama..."
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="jenis-kelamin">Jenis Kelamin:</label>
+          </td>
+          <td>
+            <input
+              id="jenis-kelamin"
+              type="text"
+              name="jenis-kelamin"
+              placeholder="Masukkan jenis kelamin..."
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="umur">Umur: </label>
+          </td>
+          <td>
+            <input
+              id="umur"
+              type="number"
+              name="umur"
+              placeholder="Masukkan umur..."
+              min="0"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="tanggal-lahir">Tanggal Lahir: </label>
+          </td>
+          <td>
+            <input
+              id="tanggal-lahir"
+              type="date"
+              name="tanggal-lahir"
+              placeholder="Masukkan tanggal lahir..."
+              style="width: 97%"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="email">Email: </label>
+          </td>
+          <td>
+            <input type="email" id="email" placeholder="Masukkan email..." />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="password1">Password: </label>
+          </td>
+          <td>
+            <input
+              id="password1"
+              type="password"
+              name="password1"
+              placeholder="Masukkan password..."
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="password2">Password:</label></td>
+          <td>
+            <input
+              id="password2"
+              type="password"
+              name="password2"
+              placeholder="Masukkan password..."
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" align="right">
+            <button type="submit" id="kirim">Kirim</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
