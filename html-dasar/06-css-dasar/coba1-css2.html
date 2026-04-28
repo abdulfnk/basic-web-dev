@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mencoba CSS Selector</title>
+		<style>
+			h1 {
+				font-size: 28px;
+				text-align: center;
+				color: navy;
+			}
+
+			.p1,
+			.p2 {
+				font-family: sans-serif;
+				color: green;
+				text-align: justify;
+				font-size: 14px;
+				width: 50%;
+				position: relative;
+			}
+
+			.p3 {
+				font-family: Verdana;
+				color: crimson;
+				text-align: center;
+				width: 50%;
+			}
+
+			.container {
+				display: flex;
+				column-gap: 4%;
+			}
+
+			.besar {
+				content-visibility: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Selector CSS</h1>
+		<article class="container">
+			<p class="p1">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio
+				doloremque hic sapiente assumenda ex, praesentium odio consequatur ipsum
+				error ea, id corrupti deleniti? Quos deserunt magni itaque velit vero
+				illo accusamus eum corporis libero tempora! Maxime sapiente cum
+				expedita?
+			</p>
+			<p class="p2 besar">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi placeat
+				similique maxime est consequuntur officia nobis culpa a delectus aut!
+			</p>
+			<p class="p3">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+				perferendis eius perspiciatis tenetur vitae natus cum reprehenderit
+				eligendi nam eveniet enim dolorum vero eos. Id sed aperiam reprehenderit
+				mollitia est.
+			</p>
+		</article>
+	</body>
+</html>
