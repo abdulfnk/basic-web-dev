@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Coba @Font-Face</title>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+
+			h1,
+			p {
+				font-family: "Old Standard TT";
+				color: brown;
+				text-align: justify;
+			}
+
+			@font-face {
+				font-family: Contoh;
+				src: url("fonts/FiraCode-Light.ttf") format("truetype");
+			}
+
+			.contoh {
+				font-family: "Fira Code Light";
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Coba Google Font</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+			voluptatem ipsam dignissimos minima illo, beatae labore dicta fuga tempore
+			perferendis ea nam repudiandae rem unde molestiae repellat nisi id? Quia
+			voluptatem soluta veniam dolorum facilis? Libero officia alias quos eaque.
+		</p>
+		<p class="contoh">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nulla
+			soluta cumque ullam sequi labore corporis eius provident hic. Deleniti?
+		</p>
+	</body>
+</html>
