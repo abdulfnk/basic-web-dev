@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Coba Background Attachment</title>
+		<style>
+			body {
+				text-align: center;
+				font-family: Arial, Helvetica, sans-serif;
+				background-color: white;
+				height: 1500px;
+			}
+
+			.kotak {
+				text-align: center;
+				width: 400px;
+				height: 400px;
+				border: 2px solid grey;
+				margin: auto;
+				background-image: url(../01-html-tag-dasar/images/undipaja.png);
+				background-size: 60px;
+				background-repeat: round;
+				/* kalau overflow auto jk konten sedikit scroll hilang, berbeda dengan scroll meskipun konten sedikit scroll tetap muncul */
+				overflow: auto;
+				background-attachment: fixed;
+			}
+
+			.konten {
+				color: white;
+				line-height: 1.5;
+				background-color: rgba(0, 0, 0, 0.7);
+			}
+
+			p {
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Background Attachment</h1>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta magni
+			aspernatur, officia inventore culpa fuga voluptas totam earum hic odit
+			eveniet, temporibus quae exercitationem nobis placeat quos blanditiis
+			provident unde nesciunt? Reprehenderit nulla provident et iure modi porro,
+			error pariatur?
+		</p>
+		<div class="kotak">
+			<div class="konten">
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+					nostrum illo laboriosam distinctio repellat rerum nisi, mollitia
+					aliquid suscipit placeat explicabo, ab corrupti vero molestias ad
+					recusandae optio. Ducimus, magnam autem culpa odit accusantium
+					voluptate ut possimus ea? Veniam deleniti reiciendis ipsum odio
+					voluptas, quo corrupti labore libero quod aliquam vel voluptatum
+					temporibus itaque. Impedit culpa corrupti dolorum laudantium quo
+					libero assumenda officiis saepe magnam? Id culpa obcaecati natus
+					explicabo mollitia aspernatur quaerat neque vel quis voluptatibus
+					adipisci quisquam accusantium harum aliquid consequatur deleniti,
+					dignissimos qui voluptatem facilis illum ad, consequuntur corrupti
+					recusandae. Ducimus autem commodi provident dolorum, saepe, deserunt
+					nemo nostrum, velit esse perspiciatis adipisci quo facilis quasi
+					soluta quae. Assumenda dolorem debitis, hic commodi quia nostrum
+					possimus, quidem unde quasi odit est voluptatem. Modi ea, ad pariatur
+					commodi alias laboriosam placeat deleniti veritatis soluta dolorem
+					tempora quis maiores molestiae ipsa quae repellendus vel autem. Rem
+					quis, consequuntur, incidunt veritatis impedit officia accusantium
+					illo quos perspiciatis repellendus architecto. Unde ea sapiente in
+					odio libero veritatis. Iusto praesentium aut rem dignissimos
+					aspernatur, laborum doloribus in rerum dolorem itaque porro voluptate
+					maiores sit tenetur perferendis vero eos ducimus. Facere maxime est
+					ducimus praesentium consequuntur esse reprehenderit harum error eos
+					quam nostrum autem repellat et illum nesciunt, quisquam neque nobis
+					quo tenetur perspiciatis sint. Iure assumenda rem vel eos, dolorum
+					quidem ea nesciunt perspiciatis repellendus molestiae, temporibus
+					dolore, dolores unde modi cumque. Minima accusantium quasi, possimus
+					facilis quam cumque. Quo natus velit accusantium nobis sed ab sint
+					exercitationem veniam repellendus porro repudiandae commodi fuga
+					numquam aliquid dolores, explicabo beatae reprehenderit quod
+					perferendis! Blanditiis sunt eum autem odio accusamus! Vitae ducimus
+					consequatur ut. Saepe in atque iusto quasi. Deleniti laudantium, iure
+					similique odit ullam laboriosam sequi omnis quam nemo quibusdam
+					expedita assumenda velit ducimus necessitatibus, quasi repellendus
+					explicabo libero. Assumenda veritatis perferendis ipsum.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
