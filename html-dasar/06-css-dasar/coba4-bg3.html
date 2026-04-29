@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mencoba Background Color</title>
+		<style>
+			body {
+				background-color: lightblue;
+				background-image: linear-gradient(-37deg, green 20%, blue, lightgreen);
+				/* background-image: linear-gradient(
+					to right top,
+					green 20%,
+					blue,
+					lightgreen
+				); */
+				height: 100vh;
+			}
+
+			.kotak1 {
+				width: 200px;
+				height: 200px;
+				background: greenyellow;
+				background-image: radial-gradient(salmon, lightyellow);
+			}
+			.kotak2 {
+				width: 200px;
+				height: 200px;
+				background: greenyellow;
+				background-image: conic-gradient(salmon, lightyellow, yellow, white);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="kotak1"></div>
+		<div class="kotak2"></div>
+	</body>
+</html>
