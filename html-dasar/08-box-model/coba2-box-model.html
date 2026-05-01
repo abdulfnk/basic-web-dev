@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Coba Box Model</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.kotak1 {
+				width: 300px;
+				height: 300px;
+				background-color: lightblue;
+				/* meskipun auto, tp yang diberi nilai adalah right dan left nya
+				margin: auto; */
+				/* jika margin -px bisa menyembunyikan elemen tersebut jika melebihi margin dan padding body */
+				/* margin: 50px             -> semua sisi
+			        margin: 50px auto        -> atas-bawah 50px, kanan-kiri auto
+			        margin: 50px auto 50px   -> atas 50px kanan-kiri auto, 50px bawah
+			        margin: 50px 50px 50px 50px -> 50px atas, dan sisanya dibaca searah jarum jam*/
+				margin-top: 8px;
+				margin-right: auto;
+				margin-left: auto;
+				margin-bottom: 8px;
+				padding: 8px;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+			}
+
+			.kotak2 {
+				width: 200px;
+				height: 200px;
+				background-color: salmon;
+				/* meskipun margin kotak1 8px dan kotak2 4px,
+			       jarak antara kedua kotak ini tetap 8px,
+			       karena margun menilai siapa nilai terbesar, dia yang menang */
+				margin: 4px auto;
+				padding: 4px;
+
+				/* Jika margin kotak2 -12px maka kotak2 akan berada di depan kotak1 karena kotak2 ditulis setelah kotak1 (override secara tidak langsung/menimpa) */
+				/* margin: -12px auto; */
+				display: grid;
+				place-items: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="kotak1">
+			<a href="">1</a>
+			<a href="">2</a>
+			<a href="">3</a>
+			<a href="">4</a>
+			<a href="">5</a>
+		</div>
+		<div class="kotak2">2</div>
+	</body>
+</html>
