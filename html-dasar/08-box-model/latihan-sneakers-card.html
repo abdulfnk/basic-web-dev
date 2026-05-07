@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Detail Product Card</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+				background-color: #f3f3f3;
+				padding: 40px;
+			}
+
+			.product-card {
+				width: 320px;
+				max-height: 100vh;
+				margin: 0px auto;
+				padding: 24px;
+				background-color: white;
+				border-radius: 16px;
+				border: 1px solid #e0e0e0;
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+			}
+
+			.product-image {
+				width: 100%;
+				height: 200px;
+				overflow: hidden;
+				border-radius: 12px;
+				margin-bottom: 20px;
+			}
+			.product-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 16px;
+			}
+
+			.product-category {
+				font-size: 12px;
+				color: #06c;
+				font-weight: bold;
+				letter-spacing: 1.5px;
+				text-transform: uppercase;
+				margin-bottom: 8px;
+			}
+			.product-title {
+				font-size: 22px;
+				color: #1a1a1a;
+				font-weight: bold;
+				margin-bottom: 12px;
+			}
+
+			.product-description {
+				font-size: 14px;
+				color: #666;
+				line-height: 1.6em;
+				margin-bottom: 20px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid #eee;
+			}
+
+			.price-section {
+				margin-bottom: 20px;
+			}
+			.price-section .price {
+				font-size: 26px;
+				color: black;
+				font-weight: bold;
+			}
+
+			.price-section .original-price {
+				font-size: 15px;
+				color: #999;
+				margin-left: 8px;
+			}
+
+			.product-price::after {
+				display: inline-block;
+				content: "Rp 2,299,000";
+				text-decoration: line-through;
+				font-weight: 400;
+				font-size: 16px;
+				color: #b0b0b0;
+				padding: 0px 0px 0px 12px;
+			}
+
+			.label-wrapper {
+				border: none;
+			}
+
+			.label-size {
+				font-size: 13px;
+				color: #333;
+				font-weight: bold;
+				margin-bottom: 12px;
+			}
+
+			.size-option {
+				margin-bottom: 24px;
+			}
+
+			.size-option input[type="radio"] {
+				display: none;
+			}
+
+			.size-option label {
+				display: inline-block;
+				width: 44px;
+				height: 44px;
+				border: 2px solid #eee;
+				text-align: center;
+				line-height: 40px;
+				margin-left: 4px;
+				font-weight: bold;
+				color: #555;
+				cursor: pointer;
+				border-radius: 4px;
+				transition: 0.3s ease;
+			}
+			.size-option label:hover {
+				border-color: black;
+				transition: 0.3 ease;
+			}
+
+			.size-option input[type="radio"]:checked + label {
+				background-color: black;
+				color: #aeaeae;
+				border-color: black;
+			}
+
+			.buy-product {
+				width: 100%;
+				padding: 16px;
+				background-color: black;
+				color: #aeaeae;
+				border: none;
+				border-radius: 16px;
+				text-transform: uppercase;
+				font-weight: bold;
+				letter-spacing: 1px;
+				cursor: pointer;
+				transition: 0.3s ease;
+			}
+
+			.buy-product:hover {
+				background-color: #333;
+			}
+		</style>
+	</head>
+	<body>
+		<article class="product-card">
+			<figure class="product-image">
+				<img
+					src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop"
+					alt="Sepatu Nike Sportwear Warna Merah"
+				/>
+			</figure>
+			<p class="product-category">Nike Sportwear</p>
+			<h3 class="product-title">Air Max Essential</h3>
+			<p class="product-description">
+				Kombinasi sempurna antara gaya retro dan kenyamanan modern dilengkapi
+				dengan teknologi Air-Sole untuk bantalan yang responsif setiap hari.
+			</p>
+			<div class="price-section">
+				<span class="price">Rp 1,899,000</span>
+				<del class="original-price">Rp 2,299,000</del>
+			</div>
+			<form>
+				<fieldset class="label-wrapper">
+					<legend class="label-size">Pilih Ukuran (US):</legend>
+					<div class="size-option">
+						<input id="size-8" type="radio" name="product-size" value="8" />
+						<label for="size-8">8</label>
+
+						<input id="size-9" type="radio" name="product-size" value="9" />
+						<label for="size-9">9</label>
+
+						<input id="size-10" type="radio" name="product-size" value="10" />
+						<label for="size-10">10 </label>
+
+						<input id="size-11" type="radio" name="product-size" value="11" />
+						<label for="size-11">11 </label>
+
+						<input id="size-12" type="radio" name="product-size" value="12" />
+						<label for="size-12">12</label>
+					</div>
+				</fieldset>
+				<div>
+					<button class="buy-product" type="submit">
+						Tambahkan Ke Keranjang
+					</button>
+				</div>
+			</form>
+		</article>
+	</body>
+</html>
